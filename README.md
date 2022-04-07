@@ -1,6 +1,6 @@
 # LineLength linter for ERB Lint
 
-[ERB Lint](https://github.com/Shopify/erb-lint) linter for checking the length of lines.
+[ERB Lint](https://github.com/Shopify/erb-lint) linter for checking the length of lines. Inspired by the RuboCop [Layout/LineLength](https://docs.rubocop.org/rubocop/cops_layout.html#layoutlinelength) cop.
 
 ## Getting Started
 
@@ -16,5 +16,5 @@ Configure it in `.erb-lint.yml`:
 linters:
   LineLength:
     enabled: true
-    max: 80 # the default is 120
+    max: 80 # The default is 120.
 ```
