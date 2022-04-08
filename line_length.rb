@@ -12,7 +12,7 @@ module ERBLint
       self.config_schema = ConfigSchema
 
       def run(processed_source)
-        processed_source.file_content.to_enum(:scan, /^.{#{@config.max + 1},}$/).each do
+        processed_source.file_content.to_enum(:scan, /.{#{@config.max + 1},}/).each do
           Regexp.last_match.then do |match|
             add_offense(
               processed_source.to_source_range(
